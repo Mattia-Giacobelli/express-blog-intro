@@ -37,6 +37,8 @@ const posts = [
 ]
 
 
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
     res.send('Server del mio blog')
 })
